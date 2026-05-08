@@ -1009,16 +1009,19 @@ button, input, textarea, select{ font: inherit; }
     right: 20px;
     left: 20px;
     display:none;
+    z-index: 100;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
     padding: 14px;
     border-radius: 18px;
-    background: rgba(10,10,10,.92);
-    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.96);
+    border: 1px solid rgba(0,0,0,.10);
     box-shadow: var(--shadow);
   }
   .nav.is-open{ display:flex; }
+  .nav__link{ width: 100%; padding: 10px 8px; border-radius: 12px; }
+  .nav__link:hover{ background: rgba(242,195,0,.14); }
   .header__menu{ display:inline-flex; }
   .brand{ min-width: 0; }
 }
